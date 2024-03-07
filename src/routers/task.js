@@ -55,9 +55,9 @@ router.delete('/tasks/:id', auth, async (req, res) => {
     }
 })
 
-// GET tasks/completed=true
+// GET tasks?completed=true
 // GET tasks?limit=2&skip=2
-// GET tasks/sortBy=createdAt:desc
+// GET tasks?sortBy=createdAt:desc
 router.get('/tasks', auth, async (req,res) => {
     const match = {};
     const sort = {};

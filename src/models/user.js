@@ -85,7 +85,7 @@ userSchema.methods.generateAuthToken = async function () {
 }
 
 //'statics' are excessible by the model methods.
-//checking the for email and password
+//checking for the email and password
 userSchema.statics.findByCredentials = async (email, password) => {
     const user = await User.findOne({ email })
 
